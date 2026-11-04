@@ -1,0 +1,14 @@
+{
+  "name": "medserve",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node backend_server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.18.0",
+    "mongodb-memory-server-core": "^11.3.0"
+  }
+}

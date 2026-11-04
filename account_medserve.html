@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5fbf9" />
+    <title>Sign in or create an account | MedServe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend_style.css" />
+    <style>
+      .account-page { max-width: 1120px; margin: 0 auto; padding: 36px 24px 64px; }
+      .account-layout { min-height: 620px; display: grid; grid-template-columns: 1fr 0.92fr; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 24px 60px rgba(22,51,47,0.08); }
+      .account-story { min-height: 100%; display: flex; flex-direction: column; justify-content: space-between; padding: 34px; color: #fff; background: linear-gradient(180deg, rgba(12,49,45,0.12) 0%, rgba(12,49,45,0.84) 100%), url('https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1400&q=85') center/cover; }
+      .account-story__brand { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; }
+      .account-story__copy { max-width: 430px; }
+      .account-story h1 { margin: 0 0 14px; font-family: var(--serif); font-size: clamp(2.4rem, 4vw, 3.8rem); line-height: 1.04; }
+      .account-story p { margin: 0; max-width: 390px; color: rgba(255,255,255,0.88); line-height: 1.7; }
+      .account-form-side { display: flex; align-items: center; justify-content: center; padding: 44px clamp(24px, 5vw, 64px); }
+      .account-form-wrap { width: 100%; max-width: 390px; }
+      .account-form-wrap h2 { margin: 0 0 8px; font-family: var(--serif); font-size: 2rem; }
+      .account-intro { margin: 0 0 24px; color: var(--muted); line-height: 1.55; }
+      .account-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; margin-bottom: 22px; border-radius: 8px; background: var(--paper-dim); }
+      .account-tab { min-height: 42px; border: 0; border-radius: 5px; background: transparent; color: var(--muted); font-weight: 700; cursor: pointer; }
+      .account-tab[aria-selected="true"] { background: #fff; color: var(--teal-dark); box-shadow: 0 2px 8px rgba(22,51,47,0.09); }
+      .account-notice { padding: 11px 12px; margin-bottom: 18px; border-left: 3px solid var(--gold); background: #fff8eb; color: #66512e; font-size: 0.84rem; line-height: 1.5; }
+      .account-form { display: flex; flex-direction: column; gap: 15px; }
+      .account-field { display: flex; flex-direction: column; gap: 7px; }
+      .account-field label { color: var(--ink); font-size: 0.88rem; font-weight: 600; }
+      .account-field input { width: 100%; min-height: 46px; padding: 10px 12px; border: 1px solid #cbdcd8; border-radius: 5px; background: #fff; }
+      .account-field input::placeholder { color: #889b97; }
+      .account-field input:focus { border-color: var(--teal); }
+      .account-submit { width: 100%; min-height: 48px; margin-top: 4px; border: 0; border-radius: 5px; background: var(--teal); color: #fff; font-weight: 700; cursor: pointer; transition: background 0.15s ease, transform 0.15s ease; }
+      .account-submit:hover { background: var(--teal-dark); transform: translateY(-1px); }
+      .account-status { min-height: 1.4em; margin: 12px 0 0; color: #8a4a22; font-size: 0.88rem; line-height: 1.5; }
+      .account-back { display: inline-block; margin-top: 22px; color: var(--teal); font-size: 0.9rem; font-weight: 600; }
+      .account-back:hover { color: var(--teal-dark); text-decoration: underline; }
+      @media (max-width: 760px) {
+        .account-page { padding: 20px 16px 40px; }
+        .account-layout { grid-template-columns: 1fr; }
+        .account-story { min-height: 240px; padding: 22px; }
+        .account-story h1 { font-size: 2.35rem; }
+        .account-story p { font-size: 0.92rem; }
+        .account-form-side { padding: 30px 22px 34px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .account-submit { transition: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-page="account"></div>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="site_pages.js"></script>
+  </body>
+</html>

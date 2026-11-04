@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact MedServe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="frontend_style.css" />
+    <style>
+      .page-shell { max-width: 1000px; margin: 0 auto; padding: 48px 24px 72px; }
+      .contact-wrap { display:grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+      .panel { background:#fff; border:1px solid var(--line); border-radius:16px; padding:24px 20px; }
+      .panel h1, .panel h2 { margin:0 0 15px; font-family: var(--serif); }
+      .panel p, .panel li { color:var(--muted); line-height:1.7; }
+      .panel ul { margin:14px 0 0 18px; padding:0; }
+      .contact-form { display:flex; flex-direction:column; gap:12px; }
+      .contact-form input, .contact-form textarea { border:1px solid var(--line); border-radius:10px; padding:10px 12px; font:inherit; }
+      .contact-form textarea { min-height:120px; resize:vertical; }
+      @media (max-width: 760px) { .contact-wrap { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-page="contact"></div>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="site_pages.js"></script>
+  </body>
+</html>
